@@ -17,10 +17,9 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-//Route::get('/','PostController@index');
 
-//Route::get('/','PostController@index');
-
-Route::get('', function () {
-    return view('contact.blade.php');
+Route::get('/', function () {
+    return "Home page";
 });
+
+
