@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,5 +22,7 @@ Route::get('/welcome', function () {
 Route::get('/', function () {
     return "Home page";
 });
+
+Route::get('/', 'PostController@index' );
 
 
