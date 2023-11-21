@@ -23,6 +23,11 @@ Route::get('/', function () {
     return "Home page";
 });
 
-Route::get('/', 'PostController@index' );
+//Route::get('/contact', 'PostTwo@contact');
 
+//Route::get('/post', 'PostController@index' );
+
+Route::get("/contact", function () {
+    return view("contact");
+});
 
