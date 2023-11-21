@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PostTwo extends Controller
 {
     //
-    public function contact(){
-        return view("contact");
+    public function index(){
+        return view('contact');
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostTwo;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +32,4 @@ Route::get("/contact", function () {
     return view("contact");
 });
 
+Route::get("/post", [PostTwo::class,"index"]);
