@@ -1,3 +1,7 @@
+<div>
+				<!-- Smile, breathe, and go slowly. - Thich Nhat Hanh -->
+</div>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,11 +58,8 @@
 																								<p>Remark : {{ $item->remark }} </p>
 																								<p>Age : {{ $item->age }} </p>
 																								<!--<a href="student/{{ $item->id }}" class="link">View More</a>-->
-																								<a href="{{ route('student.show', [$item->id]) }}" class="link">View More</a>
+																								<a href="{{ route('student.restore', [$item->id]) }}" class="link">Restore</a>
 
-																								<a href="{{ route('student.soft_delete', [$item->id]) }}" class="link">Move to trash</a>
-
-																								<a href="{{ route('student.force_delete', [$item->id]) }}" class="link">Delete</a>
 																				</div>
 																</li>
 												@endforeach
